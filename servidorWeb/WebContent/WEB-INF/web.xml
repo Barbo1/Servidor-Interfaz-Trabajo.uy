@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="https://jakarta.ee/xml/ns/jakartaee" xsi:schemaLocation="https://jakarta.ee/xml/ns/jakartaee https://jakarta.ee/xml/ns/jakartaee/web-app_6_0.xsd" id="WebApp_ID" version="6.0">
+  <display-name>Trabajo.uy</display-name>
+  <display-name>Tarea3</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+  </welcome-file-list>
+  <servlet>
+    <servlet-name>home</servlet-name>
+    <servlet-class>controllers.home</servlet-class>
+    <async-supported>true</async-supported>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>home</servlet-name>
+    <url-pattern>/inicio</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description></description>
+    <display-name>Imagenes</display-name>
+    <servlet-name>Imagenes</servlet-name>
+    <servlet-class>controllers.Imagenes</servlet-class>
+  </servlet>
+  <servlet>
+    <description></description>
+    <display-name>OperacionesExternas</display-name>
+    <servlet-name>OperacionesExternas</servlet-name>
+    <servlet-class>controllers.OperacionesExternas</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>OperacionesExternas</servlet-name>
+    <url-pattern>/OperacionesExternas</url-pattern>
+  </servlet-mapping>
+  <filter>
+    <filter-name>PageCounterFilter</filter-name>
+    <filter-class>controllers.PageCounterFilter</filter-class>
+  </filter>
+  <filter-mapping>
+    <filter-name>PageCounterFilter</filter-name>
+    <url-pattern>/consulta-oferta</url-pattern>
+  </filter-mapping>
+</web-app>

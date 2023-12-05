@@ -1,0 +1,8 @@
+Para poder ejecutar de manera correcta TODO:
+
+    1 - En la carpeta Tarea3 ejecutar: make compilar
+    2 - En la carpeta Tarea3/paquete ejecutar:  java -jar estacionTrabajo.jar
+    3 - Colocar servidorWeb.war en la carpeta webapps de apacheTomcat
+    4 - Ejecutar para iniciar el servidor el comando sh startup.sh en la carpeta bin de apacheTomcat y ejecutar sh shutdown.sh para cerrarlo
+
+    OPCIONAL: si no funciona con make compilar, desde eclipse hacer click derecho en la carpeta de estacionTrabajo o servidorWeb y ejecutar Maven -> UpdateProject, luego ejecutar Run as -> Maven install. Esto genera en la carpeta target de estacionTrabajo o servidorWeb los jar o war, cambiarles el nombre y colocarlos en paquete y seguir como arriba. Para estacionTrabajo el jar que sirve es el de withDependencies.

@@ -1,0 +1,632 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+body {
+    background-color: #F3F2F0;
+    height: 100vh;
+}
+
+/* Formatos disposicion */
+.centrar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.centrar2 {
+    justify-content: center;
+    align-items: center;
+}
+
+.derecha{
+    display: flex;
+    justify-content: right;
+    align-items:end;
+}
+
+.espacios {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+.margenTitulo {
+    margin-left: -15%;
+}
+
+.contenedorPostulantesPaquete{
+    padding-top: 90px;
+    margin-right: 60px;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.contenedorPostulanteOferta{
+    margin-right: 60px;
+    margin-left: 60px;
+}
+
+.contenedorConsOf{
+    margin-top: 10px;
+}
+
+/* Formatos colores */
+.fondoAzulLetraBlanca {
+    background-color: #0A66C2;
+    border-color: white;
+    color: white;
+}
+
+.fondoAzulLetraBlanca .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(255,255,255, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+}
+
+.fondoAzulLetraBlanca.navbar-toggler {
+  border-color: rgb(255,255,255);
+} 
+.fondoBlancoLetraAzul {
+    background-color: white;
+    color: #0A66C2;
+}
+
+.fondoGrisLetraBlanca {
+    background-color: #606264;
+    color: white;
+}
+
+.contenedorInfoOferta {
+    background-color: white;
+    color: black;
+    border: 2px solid #0A66C2;
+    padding: 20px;
+    max-width: 900px;
+}
+
+.contenedorSeleccion{
+	width: 75%;
+	margin-top:10px;
+}
+
+.contenedorInfoPost {
+	margin-top: 30px;
+    background-color: white;
+    color: black;
+    border: 2px solid #0A66C2;
+    padding: 20px;
+}
+
+.extendd:hover a{
+    background-color: white;
+    color: #0A66C2;
+    font-weight: bold;
+}
+
+.coloresOfertas {
+    border: #0A66C2 2px solid;
+    background-color: white;
+    color: black;
+    font-size: 125%;
+    margin: 30px;
+}
+
+.coloresPost {
+    border: #0A66C2 2px solid;
+    background-color: white;
+    color: black;
+    font-size: 125%;
+}
+
+.coloesPost:hover {
+    background-color: #606264;
+    color: white;
+}
+
+
+.coloresOfertas:hover {
+    background-color: #606264;
+    color: white;
+}
+
+.blanco {
+    color: white;
+}
+
+.negro {
+    color: black;
+}
+
+.azul {
+    color: #0A66C2;
+}
+
+/* Formato textos*/
+.titulo {
+    font-size: 200%;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-weight: bold;
+    align-self: center;
+}
+
+.texto {
+    font-size: 125%;
+    color: black;
+}
+
+.chico {
+    font-size: 100%;
+}
+
+.labels {
+    font-size: 17px;
+    color: black;
+    font-weight: bold;
+}
+
+.tituloOferta {
+    font-weight: bold;
+    font-size: 140%;
+}
+
+.subtitulo {
+    text-align: left;
+    font-size: 25px;
+    color: #606264;
+    font-style: italic;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+/* Ejemplo : nombre de usuario repetido*/
+.warnings {
+    color: red;
+    font-size: 80%;
+    margin-bottom: -1%;
+    font-weight: bold;
+}
+
+.formato_{
+    width: 250px;
+    margin-right: 40px;
+    border: #0A66C2 solid 3px;
+    margin-top: 40px;
+}
+
+/* Imagenes */
+.imagen {
+    width: 100%;
+    height: auto;
+}
+
+.imagen.preview {
+    width: 200px;
+    height: auto;
+}
+
+.imagenPerfil {
+    width: 70px;
+    height: 70px;
+}
+
+.imagenConsOferta{
+    width: 120px;
+    height: 120px;
+}
+
+.imagenCard {
+    object-fit: cover;
+}
+
+.imagenCard.Oferta {
+    width: 245px;
+    height: 245px;
+}
+
+.imagenConsulta {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border: 3px solid #0A66C2;
+    margin-left: 15%;
+}
+
+.imagenOferta {
+    width: 325px;
+    height: 200px;
+    object-fit: cover;
+    border: 3px solid #0A66C2;
+}
+
+.imagenPost {
+    width: 325px;
+    height: 200px;
+    object-fit: cover;
+}
+
+
+.imagenOferta.editar:hover{
+    opacity: 50%;
+}
+
+.imagenOfertaIndex {
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+}
+
+.imagenEditar{
+    width: 100%;
+    height: 100%;
+}
+
+/* Efectos*/
+.efectoZoom {
+    transition: transform 0.1s;
+}
+
+.efectoZoom:hover {
+    transform: scale(1.05);
+}
+
+.extendd {
+    transition: transform 0.1s, color 0.1s, background-color 0.1s;
+    margin-left: 25px;
+}
+
+.extendd:hover {
+    color: white;
+    background-color: #0A66C2;
+    transform: scale(1.05);
+}
+
+/*Botones*/
+.boton {
+    background-color: #0A66C2;
+    color: white;
+    font-size: 20px;
+    width: 100;
+    padding: 5px;
+    border-radius: 40px;
+    border: 0px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.boton:hover {
+    background-color: white;
+    border-color: #0A66C2;
+    color: #0A66C2;
+}
+
+.boton:active {
+    background-color: #0A66C2;
+    border-color: #0A66C2;
+    color: white;
+}
+
+.boton2 {
+    background-color: #0A66C2;
+    color: white;
+    font-size: 20px;
+    width: 100;
+    padding: 5px;
+    border-radius: 40px;
+    border: 0px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+.boton2:hover{
+    background-color: #606264;
+    border-color: #0A66C2;
+    color: white;
+}
+
+.boton2:active {
+    background-color: #0A66C2;
+    border-color: #0A66C2;
+    color: white;
+}
+
+.botonseleccionar {
+    background-color: #0A66C2;
+    color: white;
+    border-color: white;
+    margin-left: 1px;
+}
+
+.botonseleccionar:hover {
+      background-color: #606264;
+    border-color: #0A66C2;
+    color: white;
+}
+
+.botonseleccionar:active {
+    background-color: #0A66C2;
+    border-color: #0A66C2;
+    color: white;
+}
+
+.botonbusqueda{
+    background-color: #0A66C2;
+    color: white;
+    border-color: white;
+    margin-left: 1px;
+}
+
+.botonbusqueda:hover {
+    background-color: white;
+    border-color: #0A66C2;
+    color: #0A66C2;
+}
+
+.botonbusqueda:active {
+    background-color: #0A66C2;
+    border-color: #0A66C2;
+    color: white;
+}
+
+.botonMenuDesplegable {
+    color: white;
+    height: 165%;
+}
+.botonMenuDesplegable:hover {
+    color: #4B4D51;
+}
+.botonMenuDesplegable:active{
+    color: #4B4D51;
+}
+
+.subBotonMenuDesplegable {
+    background-color: #444A51;
+    color: white;
+    height: 165%;
+}
+.subBotonMenuDesplegable:hover {
+    color: #686F76;
+}
+.subBotonMenuDesplegable:active{
+    color: #686F76;
+}
+
+/* Color de las row */
+.seleccionable-row {
+    background-color: white;
+    color:#0A66C2;
+}
+.seleccionable-row:hover {
+    background-color: #606264;
+    color: white;
+}
+.seleccionable-row-selected {
+    background-color: #606264 !important;
+    color: white !important;
+}
+.seleccionable-row-selected:hover {
+    background-color: #606264 !important;
+    color: white !important;
+}
+
+/* Color acordion menu izquierda. */
+.seleccionable.collapsed {
+    background-color: white;
+    color:#0A66C2;
+    background-image: none;
+}
+
+.seleccionable.collapsed:hover {
+    background-color: #0A66C2;
+    color: white;
+    background-image: none;
+}
+
+.seleccionable:not(.collapsed) {
+    background-color: #0A66C2;
+    color: white;
+    background-image: none;
+}
+
+.seleccionable:not(.collapsed):hover {
+    background-color: white;
+    color:#0A66C2;
+}
+
+.seleccionable:not(.collapsed)::after {
+    background-image: none;
+}
+
+.seleccionable.collapsed::after {
+    background-image: none;
+}
+
+/* Carrusel */
+.carousel{
+    max-width: 1900px;
+}
+
+.carousel-item{
+    height: 350px;
+}
+
+.descCarrusel{
+    font-size: 120%;
+    font-style: italic;
+    
+}
+
+.carousel-caption {
+    background-color: rgba(128, 128, 128, 0.6); /* Fondo gris con opacidad del 30% */
+    color: white; /* Texto en blanco */
+    padding: 10px; /* Espaciado interno para el contenido del caption */
+}
+
+/* Links */
+.hipervinculo {
+    color: #0A66C2;
+}
+
+.hipervinculo:hover {
+    color: #8314a5;
+}
+
+.sinHipervinculo{
+    text-decoration: none;
+}
+
+/* Formularios */
+.contenedorADO {
+    border: 2px black solid;
+    margin: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.tituloPrincipal {
+    text-align: center;
+    color: white;
+    background-color: #0A66C2;
+    padding: 30px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.formu {
+    background: white;
+    padding: 35px;
+    border-radius: 10px;
+    width: 100;
+    margin: auto;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+.campo {
+    width: 100%;
+    background: white;
+    padding: 10px;
+    border-radius: 4px;
+    margin-bottom: 10px;
+    border: 1px solid black;
+    font-size: 15px;
+    color: black;
+    resize: none;
+}
+
+.campo.keys {
+	max-height: 150px;
+	display: flex;
+    flex-wrap: wrap;
+}
+
+/* footer */
+footer {
+    min-height: 100px;
+    margin-top: 100px;
+}
+
+.footer-texto {
+    font-size: 1.5rem;
+    padding: 20px;
+    margin-bottom: 30px;
+}
+
+.derechos-de-autor {
+    font-size: 15px;
+    color: white;
+    padding: 20px;
+    margin-top: -30px;
+}
+
+.seccion-oscura {
+    color: white;
+    background-color:#0A66C2;
+}
+
+.tags{
+    color:white;
+    background-color: #0A66C2;
+    padding:3px;
+    width:15%;
+    border: 1px solid black;
+    margin-left: 5px;
+    border-radius: 5%;
+    margin-bottom: 5px;
+}
+
+.tags.activo{
+    background-color: green;
+}
+
+.tags.vencido{
+    background-color: red;
+}
+
+.tags.proceso{
+    background-color: yellow;
+    color: black;
+}
+
+.tags.keywords{
+    width: 20%
+}
+
+.tags.keywords:hover{
+    background-color: #606264;
+    color: white;
+}
+
+ul.pagination {
+    display: inline-block;
+    padding: 0;
+    margin: 0;
+    margin-top: 20px;
+}
+
+ul.pagination li {display: inline;}
+
+ul.pagination li a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    transition: background-color .3s;
+    border: 1px solid #0A66C2;
+    background-color: white;
+
+
+}
+ul.pagination li a.active {
+    background-color:#0A66C2;
+    color: white;
+}
+
+ul.pagination li a:hover:not(.active) {background-color: #ddd;}
+
+.pagination li:first-child a {
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
+
+.pagination li:last-child a {
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+div.center {
+    text-align: center;
+}
+
+inputImagen {
+	position: absolute;
+    top: 0;
+    left: 0;
+    width: 0%;
+    height: 0%;
+    opacity: 0%;
+}
+
+

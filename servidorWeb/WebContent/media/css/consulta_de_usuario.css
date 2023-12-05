@@ -1,0 +1,148 @@
+
+/* Parte de secciones, cuadrado donde van las pestañas*/
+.wrap{
+    max-width: 90%;
+    margin: 0px auto;
+}
+
+ul.tabs{
+    width: 100%;
+    list-style: none;
+    display: flex;
+}
+
+ul.tabs li.editar{
+    width: 5%;
+}
+
+ul.tabs li a{
+    font-size: 19px;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
+
+ul.tabs li{
+    width: 20%;
+    background-color: #606264;
+    border: black 2px solid;
+    margin-bottom: -18px;
+}
+
+ul.tabs li:hover{
+	background-color:#0A66C2;
+}
+
+.active{
+    background-color: #0A66C2;
+}
+
+.secciones{
+    border: black 2px solid;
+    background-color: white;
+}
+.secciones article{
+    padding:20px;
+    text-align: justify;
+}
+
+.margenTitulo{
+    margin-left: -15%;
+}
+
+.subtitulo{
+    text-align: left;
+    font-size: 25px;
+    color: #606264;
+    font-style: italic;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.imagenOferta{
+    width: 200px;
+	height: 200px;
+	object-fit: cover;
+	border: 3px solid #0A66C2;
+}
+
+.textoOferta{
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 25px;
+    margin-top: 3%;
+}
+
+.postulacion{
+    background-color: #0A66C2;
+    font-size: 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    border: black 3px solid;
+    color: white;
+}
+
+.imagenLista{
+    width: 245px;
+	height: 245px;
+	object-fit: cover;
+}
+
+.extendida{
+    width: 250px;
+    margin-right: 40px;
+    border: #0A66C2 solid 3px;
+    margin-top: 40px;
+}
+
+.uploadbtn{
+	position: absolute;
+	height: 30px;
+	width: 30px;
+	padding: 6px 6px;
+	border-radius: 50%;;
+	cursor: pointer;
+	color: white;
+	background-color: rgb(173,172,172,0.801);
+	box-shadow: 2px 4px 4px black;
+	transform: translatex(-90%);
+	margin-top: 30px;
+}
+
+.imagen-unfollow {
+    filter: invert(37%) sepia(0%) saturate(2236%) hue-rotate(243deg) brightness(99%) contrast(88%);
+}
+.imagen-unfollow:hover {
+    filter: invert(13%) sepia(86%) saturate(6026%) hue-rotate(338deg) brightness(98%) contrast(110%);
+}
+.imagen-unfollow-anim {
+    pointer-events: none;
+    animation-name: trancision-unfollow-follow;
+    animation-duration: 0.2s;
+    filter: invert(13%) sepia(86%) saturate(6026%) hue-rotate(338deg) brightness(98%) contrast(110%)
+}
+@keyframes trancision-unfollow-follow {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.2); }
+    100% { transform: scale(1); }
+}
+
+.imagen-follow {
+    filter: invert(13%) sepia(86%) saturate(6026%) hue-rotate(338deg) brightness(98%) contrast(110%);
+}
+.imagen-follow:hover {
+    filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(251deg) brightness(105%) contrast(108%);
+}
+.imagen-follow-anim {
+    pointer-events: none;
+    animation-name: trancision-follow-unfollow;
+    animation-duration: 0.5s;
+}
+@keyframes trancision-follow-unfollow {
+    from {
+        filter: invert(0%) sepia(0%) saturate(0%) hue-rotate(251deg) brightness(105%) contrast(108%);
+    }
+    to {
+        filter: invert(37%) sepia(0%) saturate(2236%) hue-rotate(243deg) brightness(99%) contrast(88%);
+    }
+}

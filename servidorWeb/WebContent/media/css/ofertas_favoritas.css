@@ -1,0 +1,46 @@
+.Favorito{  
+    filter: invert(31%) sepia(98%) saturate(1109%) hue-rotate(185deg) brightness(86%) contrast(97%);
+}
+.Favorito:hover{
+    filter: invert(15%) sepia(100%) saturate(6667%) hue-rotate(358deg) brightness(97%) contrast(115%);
+}
+.FavoritoAnim {
+    pointer-events: none;
+    animation-name: trancisionNoSi;
+    animation-duration: 0.2s;
+}
+
+.NoFavorito{  
+    filter: invert(80%) sepia(0%) saturate(3698%) hue-rotate(113deg) brightness(74%) contrast(77%);
+}
+.NoFavorito:hover{
+    filter: invert(31%) sepia(98%) saturate(1109%) hue-rotate(185deg) brightness(86%) contrast(97%);
+}
+.NoFavoritoAnim {
+    pointer-events: none;
+    animation-name: trancisionSiNo;
+    animation-duration: 0.5s;
+}
+
+@keyframes trancisionSiNo {
+    from {
+        filter: invert(15%) sepia(100%) saturate(6667%) hue-rotate(358deg) brightness(97%) contrast(115%)
+    }
+    to {
+        filter: invert(80%) sepia(0%) saturate(3698%) hue-rotate(113deg) brightness(74%) contrast(77%)
+    }
+}
+@keyframes trancisionNoSi {
+    0% {
+        transform: scale(1); 
+        filter: invert(31%) sepia(98%) saturate(1109%) hue-rotate(185deg) brightness(86%) contrast(97%)
+    }
+    50% {
+        transform: scale(1.2); 
+        filter: invert(31%) sepia(98%) saturate(1109%) hue-rotate(185deg) brightness(86%) contrast(97%)
+    }
+    100% {
+        transform: scale(1); 
+        filter: invert(31%) sepia(98%) saturate(1109%) hue-rotate(185deg) brightness(86%) contrast(97%)
+    }
+}

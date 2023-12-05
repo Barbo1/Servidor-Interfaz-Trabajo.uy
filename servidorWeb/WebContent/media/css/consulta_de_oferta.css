@@ -1,0 +1,53 @@
+.ui-content {
+    border: 2px solid  #0A66C2; 
+    background-color: white;
+    height: 750px; 
+    width: 530px; 
+    text-align: center;
+    padding: 20px; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    position: fixed;
+	top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    z-index: 9999; 
+}
+
+.card-oferta-empresa {
+    border: #0A66C2 solid 3px;
+}
+
+.espacio {
+    padding-bottom: 30px; 
+}
+
+.boton-container {
+    text-align: center; 
+    position: relative; 
+    height: 600px;
+    display: inline-block;
+}
+
+.boton-largo {
+    width: 100px; 
+}
+
+.formulario {
+    background: white;
+    border-radius: 10px;
+    width: 80%; 
+    margin: auto;
+    color: white;
+    justify-content: center;
+    align-items: center;
+}
+
+.extendd2 {
+    transition: transform 0.1s, color 0.1s, background-color 0.1s;
+}
+
+.extendd2:hover {
+    color: white;
+    background-color: #0A66C2;
+    transform: scale(1.05);
+}
